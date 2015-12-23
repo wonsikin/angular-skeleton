@@ -1,0 +1,42 @@
+<div class="content-inner">
+	<div class="card">
+		<div class="card-header conditon-form">
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-3">
+					<div class="form-group fg-float">
+						<div class="fg-line">
+							<input type="text" class="input-sm form-control fg-input" data-ng-model="qf.cond.type">
+						</div>
+						<label class="fg-label">类型</label>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-9">
+					<div class="form-group fg-float">
+						<div class="fg-line">
+							<input type="text" class="input-sm form-control fg-input" data-ng-model="qf.cond.keyWord">
+						</div>
+						<label class="fg-label">查询</label>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-12">
+					<button class="btn btn-primary btn-block waves-effect" data-ng-click="qf.sendQueryRequest()">查询</button>
+				</div>
+			</div>
+		</div>
+		<div class="card-body">
+			<table ng-table="qf.tableBasic" class="table table-striped table-vmiddle">
+				<tr ng-repeat="w in $data">
+					<td data-title="'编号'">
+						{{ w.personId }}
+					</td>
+					<td data-title="'部门'">
+						{{ w.personDepartment }}
+					</td>
+					<td data-title="'内容'">
+						{{ w.content }}
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

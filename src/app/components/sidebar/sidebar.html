@@ -1,0 +1,56 @@
+<div class="sidebar-inner c-overflow" tabindex="0">
+  <div class="profile-menu toggled">
+    <a href="" toggle-submenu="">
+      <div class="profile-pic">
+        <img src="assets/images/profile-pics/1.jpg" alt="">
+      </div>
+      <div class="profile-info">Malinda Hollaway</div>
+    </a>
+  </div>
+  <ul class="main-menu">
+    <li data-ui-sref-active="active" class="active">
+      <a data-ui-sref="home" data-ng-click="mactrl.sidebarStat($event)" href="#/home">
+        <i class="fa fa-home fa-fw"></i> Home
+      </a>
+    </li>
+    <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('figure') }">
+      <a href="" toggle-submenu>
+        <i class="fa fa-user fa-fw"></i> 人物信息管理
+      </a>
+      <ul>
+        <li><a data-ui-sref-active="active" data-ui-sref="figure.new.basic" data-ng-click="mactrl.sidebarStat($event)" href="#/figure/new">人物信息新增</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="figure.list" data-ng-click="mactrl.sidebarStat($event)" href="#/figures">人物信息查询</a></li>
+      </ul>
+    </li>
+    <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('group') }">
+      <a href="" toggle-submenu>
+        <i class="fa fa-group fa-fw"></i> 社团信息管理
+      </a>
+      <ul>
+        <li><a data-ui-sref-active="active" data-ui-sref="group.new" data-ng-click="mactrl.sidebarStat($event)" href="#/group/new">社团信息新增</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="group.list" data-ng-click="mactrl.sidebarStat($event)" href="#/groups">社团信息查询</a></li>
+      </ul>
+    </li>
+    <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('activity') }">
+      <a href="" toggle-submenu>
+        <i class="fa fa-calendar-check-o fa-fw"></i> 活动信息管理
+      </a>
+      <ul>
+        <li><a data-ui-sref-active="active" data-ui-sref="activity.new" data-ng-click="mactrl.sidebarStat($event)" href="#/activity/new">活动信息新增</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="activity.list" data-ng-click="mactrl.sidebarStat($event)" href="#/activities">活动信息查询</a></li>
+      </ul>
+    </li>
+    <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('system') }">
+      <a href="" toggle-submenu>
+        <i class="fa fa-gears fa-fw"></i> 系统管理
+      </a>
+      <ul>
+        <li><a data-ui-sref-active="active" data-ui-sref="system.authority" data-ng-click="mactrl.sidebarStat($event)" href="#/system/authority">用户权限管理</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="system.basic" data-ng-click="mactrl.sidebarStat($event)" href="#/system/basic">基础信息维护</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="system.access" data-ng-click="mactrl.sidebarStat($event)" href="#/system/access">数据权限管理</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="system.modificationLog" data-ng-click="mactrl.sidebarStat($event)" href="#/system/log/modification">数据变更日志</a></li>
+        <li><a data-ui-sref-active="active" data-ui-sref="system.userLog" data-ng-click="mactrl.sidebarStat($event)" href="#/system/log/user">用户登录日志</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
