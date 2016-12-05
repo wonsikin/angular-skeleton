@@ -9,7 +9,9 @@
 
 3. 进入到根目录，执行 `npm install`
 
-4. 执行`gulp serve`命令，即可启动项目。
+4. 执行 `bower install`
+
+5. 执行`gulp serve`命令，即可启动项目。
 
 ##目录说明##
 
